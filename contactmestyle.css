@@ -1,0 +1,176 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the entire page */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header and navigation styles */
+header {
+    background-color: var(--nice-green-color);
+    color: #7752fe;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #42446e;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    transition: color 0.3s; /* Add a smooth color transition effect */
+}
+
+nav a.active {
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: var(--nice-purple-color);
+}
+
+/* Contact form styles */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-form {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 10px 0;
+}
+
+.contact-form p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--nice-purple-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--nice-green-color);
+} 
+
+button[type="submit"] {
+    background-color: var(--nice-green-color);
+    color: rgb(0, 0, 0);
+    border: blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--nice-purple-color);
+}
+
+/* Footer styles (same as previous styles) */
+footer {
+    background-color: var(--nice-green-color);
+    color: var(--nice-purple-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email {
+    text-decoration: none;
+    color: var(--nice-purple-color);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 10px;
+    transition: color 0.3s;
+}
+
+.email:hover {
+    color: var(--default-color);
+}
+
+.fa-brands {
+    text-decoration: none;
+    font-size: 40px;
+    margin: 10px;
+    transition: color 0.3s, transform 0.3s;
+    color: var(--nice-purple-color);
+}
+
+.fa-brands:hover {
+    color: var(--default-color);
+    transform: scale(1.1);
+}
+
+
+
+/* 
+button[type="submit"] {
+    background-color: var(--nice-green-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--nice-purple-color);
+} */
